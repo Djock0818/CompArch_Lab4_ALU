@@ -1,6 +1,7 @@
 # CompArch_Lab4_ALU
 
 //code for ALU (Top-Level Entity)
+
 module ALU (X,Y,Cin, Op, Sum, Status);
 parameter N = 31;
 input [N:0]X;
@@ -12,6 +13,7 @@ output [N:0] Sum;
 output reg [3:0] Status;
 
 //for Full Adder ouput
+
 wire carry[32:0];
 wire [N:0] I0, I1, I2, I3,I4,I5,I6,I7;
 
@@ -57,6 +59,7 @@ end
 endmodule
 
 //code for Multiplexer
+
 module MUX(Out, Sel, m1, m2, m3, m4, m5, m6, m7, m8);
 
 input [7:0] m1, m2, m3, m4, m5, m6, m7, m8;
@@ -90,6 +93,7 @@ end
 endmodule
 
 //code for Adder
+
 module ADDER(X, Y, Cin, S, Cout);
 
 input X, Y;
