@@ -12,8 +12,6 @@ input [2:0] Op;
 output [N:0] Sum;
 output reg [3:0] Status;
 
-//for Full Adder ouput
-
 wire carry[32:0];
 wire [N:0] I0, I1, I2, I3,I4,I5,I6,I7;
 
